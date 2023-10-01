@@ -8,6 +8,9 @@ import LoginScreen from "../components/LoginScreen";
 import ForgetScreen from "../components/ForgetScreen";
 import VerifyScreen from "../components/VerifyScreen";
 import RegisterScreen from "../components/RegisterScreen";
+import LoginScreen2 from "../components/LoginSrceen2";
+import LoginScreen3 from "../components/LoginScreen3";
+
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
@@ -23,6 +26,8 @@ const AppNavigator = () => {
         <Stack.Screen name="ForgetScreen" component={ForgetScreen} />
         <Stack.Screen name="VerifyScreen" component={VerifyScreen} />
         <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+        <Stack.Screen name="LoginScreen2" component={LoginScreen2} />
+        <Stack.Screen name="LoginScreen3" component={LoginScreen3} />
 
       </Stack.Navigator>
     </NavigationContainer>

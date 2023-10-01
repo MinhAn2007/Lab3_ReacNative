@@ -20,6 +20,9 @@ const Login = () => {
   const handleForgetPS = () => {
     navigation.navigate("ForgetScreen");
   };
+  const login2 = () => {
+    navigation.navigate("LoginScreen2");
+  };
   const [hidePassword, setHidePassword] = React.useState(true);
 
    return(
@@ -42,7 +45,7 @@ const Login = () => {
         </Pressable>
           </View>
                   </View>
-                  <Pressable style={styles.button}>
+                  <Pressable style={styles.button} onPress={login2}>
         <Text style={styles.buttonText}>LOGIN</Text>
       </Pressable>
       <View style={styles.textContainer}>
@@ -64,7 +67,7 @@ const Login = () => {
           <Icon name="z" size={30} />
         </View>
       </Pressable>
-      <Pressable openFB={openGmail}>
+      <Pressable onPress={openGmail}>
         <View>
           <Icon name="google" size={30} color="#DB4437" />
         </View>
