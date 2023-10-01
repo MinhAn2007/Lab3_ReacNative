@@ -29,8 +29,8 @@ const RegisterScreen = () => {
           />
           <TextInput style={styles.text} placeholder="Birthday"/>  
         <View style={styles.radioContainer}>
-        <RadioButton ></RadioButton><Text style={styles.textRadio}>Male</Text>
-        <RadioButton ></RadioButton><Text style={styles.textRadio}>Female</Text>
+        <RadioButton  selected = 'true' value='nu'></RadioButton><Text style={styles.textRadio}>Male</Text>
+        <RadioButton value='nu'></RadioButton><Text style={styles.textRadio}>Female</Text>
         </View>
        
         <Pressable style={styles.button} onPress={register}>
