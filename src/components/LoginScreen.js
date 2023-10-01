@@ -3,11 +3,11 @@ import  React from  'react';
 import { StyleSheet, View ,Text, Pressable,TextInput, Linking} from 'react-native';
 
 import Icon from "react-native-vector-icons/FontAwesome";
+
 import { useNavigation } from "@react-navigation/native";
 
 const Login = () => {
   const navigation = useNavigation();
-
   const openFB = () => {
     Linking.openURL("https://www.facebook.com/");
   }
@@ -27,7 +27,7 @@ const Login = () => {
         <Text style={styles.logoText}>LOGIN</Text>
          <View style={styles.inputView}>
         <View style={styles.passwordView}>
-         <TextInput style={styles.text} placeholder="Email" />
+         <TextInput style={styles.text} placeholder="Email" />     {`\n`}   
           <TextInput style={styles.text} placeholder="Password" />
          <Pressable
           style={styles.eyeIcon}
@@ -91,7 +91,7 @@ const Login = () => {
     width: "94%",
     height: 60,
     borderColor: "#000",
-    backgroundColor: "#fff",
+    backgroundColor: "#C4C4C4",
     marginTop: 30,
     marginBottom: 10,
     padding: 15,

@@ -9,7 +9,8 @@ const MainScreen = () => {
 
   };
   const handleSignupPress = () => {
-    navigation.navigate("ForgetScreen");
+    navigation.navigate("RegisterScreen");
+
   };
 
   return (

@@ -11,6 +11,8 @@ const FirstScreen = () => {
   };
 
   const handleSignupPress = () => {
+    navigation.navigate("RegisterScreen");
+
   };
 
   return (

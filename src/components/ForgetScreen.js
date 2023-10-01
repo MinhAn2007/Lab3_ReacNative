@@ -2,12 +2,12 @@ import React from 'react';
 import { StyleSheet, View ,Text, Image,TextInput,Pressable} from 'react-native';
 import { LinearGradient } from "expo-linear-gradient";
 import Icon from "react-native-vector-icons/FontAwesome";
+import { useNavigation } from "@react-navigation/native";
 const ForgotScreen = () => {
+  const navigation = useNavigation();
   const sendRequest = () => {
-    // Gửi request lấy dữ liệu từ server
-    alert("Send request to server");
+    navigation.navigate("VerifyScreen");
   }
-
   return (
     <LinearGradient colors={["#a6f5f5", "#00CCF9"]} style={styles.container}>
      <View style={styles.logoContainer}>
@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
   },
   button :  {
     marginTop: 30,
+    marginLeft: 5,
     width: "90%",
     height: 50,
     backgroundColor: "#E3C000",
